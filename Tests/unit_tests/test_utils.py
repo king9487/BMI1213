@@ -59,7 +59,7 @@ class BmiCalculatorTest(TestCase):
         height = 1.7
         weight = 80
         bmi, bmi_means = bmi_calculator(height, weight)
-        self.assertEqual(bmi, 25.95)
+        self.assertEqual(bmi, 27.68)
         self.assertEqual(bmi_means, '輕度肥胖')
 
     def test_bmi_result_heavy3(self):
@@ -67,7 +67,7 @@ class BmiCalculatorTest(TestCase):
         height = 1.7
         weight = 90
         bmi, bmi_means = bmi_calculator(height, weight)
-        self.assertEqual(bmi, 25.95)
+        self.assertEqual(bmi, 27.68)
         self.assertEqual(bmi_means, '中度肥胖')
 
     def test_bmi_result_heavy3(self):
@@ -75,5 +75,5 @@ class BmiCalculatorTest(TestCase):
         height = 1.7
         weight = 120
         bmi, bmi_means = bmi_calculator(height, weight)
-        self.assertEqual(bmi, 25.95)
+        self.assertEqual(bmi, 41.52)
         self.assertEqual(bmi_means, '重度肥胖')
